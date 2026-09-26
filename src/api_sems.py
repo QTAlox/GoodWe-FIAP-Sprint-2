@@ -40,7 +40,7 @@ def obter_dados_sessoes_mock(num_sessoes=20):
     # Usamos Pandas DataFrame porque facilita muito a manipulação matemática no rateio
     df_sessoes = pd.DataFrame(dados)
     
-    # TODO: Para o projeto final (se fosse real), substituir essa função por requisições
+    # TODO: Para o projeto final, substituir essa função por requisições
     # HTTP (usando a biblioteca 'requests') para os endpoints reais do GoodWe SEMS.
     
     return df_sessoes
