@@ -19,7 +19,7 @@ def analisar_anomalias(df_sessoes):
     anomalias = df_analise[df_analise['anomalia'] == -1]
     
     if not anomalias.empty:
-        print(f"⚠️️ ATENÇÃO! A IA detetou {len(anomalias)} sessão(ões) com comportamento suspeito (possível fraude ou falha).")
+        print(f"⚠️️ ATENÇÃO! A IA detectou {len(anomalias)} sessão(ões) com comportamento suspeito (possível fraude ou falha).")
     else:
         print("✅ Padrões de consumo normais verificados pela IA.")
         
