@@ -46,5 +46,5 @@ streamlit run src/dashboard.py
 
 ## Print da execução
 ![Print da execução](Print1.png)
-
+![alt text](Print1.png)
 O notebook de exploração está em [`notebooks/01_exploracao_sessoes.ipynb`](notebooks/01_exploracao_sessoes.ipynb).
