@@ -1,4 +1,3 @@
-# src/rateio.py (Excerto a atualizar)
 import pandas as pd
 
 def calcular_custo_sessao(row, tarifa_base=0.95):

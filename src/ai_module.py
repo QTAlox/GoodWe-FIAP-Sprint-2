@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.ensemble import IsolationForest
 
 def analisar_anomalias(df_sessoes):
-    print("🧠 [IA] A executar Isolation Forest para detetar anomalias...")
+    print("🧠 [IA] Executando Isolation Forest para detetar anomalias...")
     df_analise = df_sessoes.copy()
     
     # Configuração do modelo de IA (Assume que 5% dos dados podem ser anomalias)

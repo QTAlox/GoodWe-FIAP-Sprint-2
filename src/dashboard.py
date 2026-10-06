@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title="EV ChargeOps", layout="wide")
 st.title("⚡ EV ChargeOps - Painel do Síndico")
 
-# Ligar à base de dados que o vosso main.py gerou
+# Ligar à base de dados gerado pelo main.py
 conn = sqlite3.connect("ev_chargeops.db")
 
 # Ler os dados

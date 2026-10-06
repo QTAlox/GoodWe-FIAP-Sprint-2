@@ -44,8 +44,6 @@ def obter_dados_sessoes_mock(num_sessoes=20):
             'kwh_consumed': consumo_kwh
         })
 
-    
-    # Usamos Pandas DataFrame porque facilita muito a manipulação matemática no rateio
     df_sessoes = pd.DataFrame(dados)
     df_sessoes['start_time'] = df_sessoes['start_time'].dt.floor('s')
     df_sessoes['end_time'] = df_sessoes['end_time'].dt.floor('s')
@@ -53,8 +51,5 @@ def obter_dados_sessoes_mock(num_sessoes=20):
 
     # formata duration_hours em duracao_recarga (HH:MM) para exibição no log e relatórios
     df_sessoes['duracao_recarga'] = df_sessoes['duration_hours'].apply(formatar_duracao)
-
-    # TODO: Para o projeto final, substituir essa função por requisições
-    # HTTP (usando a biblioteca 'requests') para os endpoints reais do GoodWe SEMS.
 
     return df_sessoes
